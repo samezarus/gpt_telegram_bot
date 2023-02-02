@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+	gpt_bot:
+		container_name: gpt_bot
+		image: gpt_bot_parent  # Родительский образ
+		build:
+			context: ./  # Контекст Dockerfile-файла текущего расположения yaml-файл ( )
+			dockerfile: Dockerfile  # Файл для сборки родительского образа
+		restart: always
+		command: bash -c 'python ./main.py'
