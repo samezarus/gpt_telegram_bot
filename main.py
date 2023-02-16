@@ -58,11 +58,11 @@ def start_message(message):
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    uerr_id = message.from_user.id
+    user_id = message.from_user.id
 
     answer = "Sorry, you are denied access"
 
-    if chek_user_id(uerr_id):
+    if chek_user_id(user_id):
         to_log_info('question')
         to_log_info(message.text)
 
@@ -82,7 +82,7 @@ def send_text(message):
         to_log_info('answer')
         to_log_info(answer)
     else:
-        to_log_war(f'{uerr_id}: is not in access list')
+        to_log_war(f'{user_id}: is not in access list')
 
     bot.send_message(message.chat.id, f'{answer}')
 

@@ -4,12 +4,14 @@ Hello everyone, this project is for quickly getting started with GPT-chat (opena
 
 ENV-params:
     
+    Add params to file ".env"    
+
     BOT_TOKEN - telegram bot token (create with "https://t.me/BotFather")
     OAI_TOKEN - token from openai.com (create in profile)
 
 Access list:
     
-    Add to file user-id's for access to bot (each id from a new line)
+    Add to file "witelist.txt" user-id's for access to bot (each id from a new line)
 
     User-id can be found in "https://t.me/getmyid_bot"
 

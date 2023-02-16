@@ -1,6 +1,7 @@
 ./venv
 ./idea
-.env
+./.env
+./witelist.txt
 /.idea/.gitignore
 /.idea/gpt_telegram_bot.iml
 /.idea/misc.xml
